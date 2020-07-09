@@ -1,4 +1,4 @@
-#Проект Mesto
+#Проект Mesto. Создание API.REST, подключение MongoDB
 
 #https://github.com/ShestakovaElena/sprint13
 
@@ -6,9 +6,8 @@
 
 ##npm run start
 
-запуск сервера на localhost:3000;
+    запуск сервера на localhost:3000;
 
 ##npm run dev
 
-запуск сервера на localhost:3000 с hot reload;
-
+    запуск сервера на localhost:3000 с hot reload;
