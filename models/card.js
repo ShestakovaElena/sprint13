@@ -12,14 +12,14 @@ const cardSchema = new mongoose.Schema({
     required: true,
     validate: {
       validator(v) {
-        const regex = /^https?:\/\/(www\.)?[\w./-]{1,}/;
+        const regex = /^https?:\/\/(www\.)?((\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|((([a-z-]{2,})*\.([a-z-]{2,}))*))(:\d{2,5})?((\/[-a-zA-Z0-9#_\/\?\.=]*)?)$/;
         return regex.test(v);
       },
-      message: 'Введите ссылку',
+      message: 'Введите корректную ссылку',
     },
   },
   owner: {
-    type: [mongoose.Schema.Types.ObjectId],
+    type: mongoose.Schema.Types.ObjectId,
     required: true,
     ref: 'user',
   },

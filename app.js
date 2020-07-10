@@ -2,9 +2,9 @@ const express = require('express');
 const mongoose = require('mongoose');
 
 const path = require('path');
-const cardsArr = require('./routes/cards');
+const cardsRouter = require('./routes/cards');
 
-const usersArr = require('./routes/users');
+const usersRouter = require('./routes/users');
 
 const { PORT = 3000 } = process.env;
 
@@ -27,9 +27,8 @@ mongoose.connect('mongodb://localhost:27017/mestodb', {
   useUnifiedTopology: true,
 });
 
-app.use(express.static(path.join(__dirname, 'public')));
-app.use('/cards', cardsArr);
-app.use('/users', usersArr);
+app.use('/cards', cardsRouter);
+app.use('/users', usersRouter);
 
 app.use('/', (req, res) => {
   res.status(404).json({ message: 'Запрашиваемый ресурс не найден' });

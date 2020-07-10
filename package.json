@@ -1,7 +1,7 @@
 {
-  "name": "sprint12",
+  "name": "sprint13",
   "version": "1.0.0",
-  "description": "project 12 for Ya.Praktikum",
+  "description": "project 13 for Ya.Praktikum",
   "main": "app.js",
   "scripts": {
     "start": "node app.js",

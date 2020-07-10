@@ -3,6 +3,6 @@ const { getUsers, createUser, getUserById } = require('../controllers/users');
 
 usersRouter.get('/', getUsers);
 usersRouter.post('/', createUser);
-usersRouter.get('/:id', getUserById);
+usersRouter.get('/:userId', getUserById);
 
 module.exports = usersRouter;
