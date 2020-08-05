@@ -1,14 +1,25 @@
-#Проект Mesto
+# Проект Mesto. Создание API.REST, подключение MongoDB
 
-#https://github.com/ShestakovaElena/sprint13
+## Описание запросов:
 
-Для локального запуска проекта:
+    GET /users - возвращает всех пользователей;
 
-##npm run start
+    GET /users/:userId - возвращает пользователя с указанным id;
 
-запуск сервера на localhost:3000;
+    POST /users - создаёт нового пользователя;
 
-##npm run dev
+    GET /cards - возвращает все карточки;
 
-запуск сервера на localhost:3000 с hot reload;
+    POST /cards - создаёт новую карточку;
 
+    DELETE /cards/:cardId - удаляет карточку с указанным id;
+
+## Для локального запуска проекта:
+
+### npm run start
+
+    запуск сервера на localhost:3000;
+
+### npm run dev
+
+    запуск сервера на localhost:3000 с hot reload;
